@@ -50,7 +50,7 @@ const ChallengeCard = ({ challenge = {}, index = 0 }) => {
           {challenge.title || 'Nombre del Reto'}
         </motion.h3>
         <motion.p
-          className="text-gray-700 text-base line-clamp-2"
+          className="text-gray-700  text-base line-clamp-2"
           variants={fadeIn}
           custom={index + 2}
         >
