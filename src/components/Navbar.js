@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import { FaInstagram, FaTiktok } from 'react-icons/fa';
 
@@ -83,50 +84,50 @@ const Navbar = ({ mobileMenuOpen, menuVisible, menuAnim, openMenu, closeMenu }) 
       </nav>
     </header>
     {/* Mobile dropdown menu below navbar */}
-    {menuVisible && (
-      <div
-        className={`fixed left-0 right-0 bg-white shadow-lg flex flex-col items-center py-6 gap-2 md:hidden z-40 overflow-hidden ${menuAnim}`}
-        style={{ top: '64px' }}
-      >
-        <NavLink
-          to="/"
-          end
-          className={({ isActive }) =>
-            'text-lg font-medium ' + ((isActive ? 'border-b-2 border-pink-600 text-pink-600' : 'text-gray-700') + ' mb-3')
-          }
-          onClick={closeMenu}
-        >
-          <span className="inline-block">Inicio</span>
-        </NavLink>
-        <NavLink
-          to="/retos"
-          className={({ isActive }) =>
-            'text-lg font-medium ' + ((isActive ? 'border-b-2 border-pink-600 text-pink-600' : 'text-gray-700') + ' mb-3')
-          }
-          onClick={closeMenu}
-        >
-          <span className="inline-block">Retos</span>
-        </NavLink>
-        <NavLink
-          to="/proteina"
-          className={({ isActive }) =>
-            'text-lg font-medium ' + (isActive ? 'border-b-2 border-pink-600 text-pink-600' : 'text-gray-700')
-          }
-          onClick={closeMenu}
-        >
-          <span className="inline-block">Proteína</span>
-        </NavLink>
-        <NavLink
-          to="/guias"
-          className={({ isActive }) =>
-            'text-lg font-medium ' + ((isActive ? 'border-b-2 border-pink-600 text-pink-600' : 'text-gray-700') + ' mb-3')
-          }
-          onClick={closeMenu}
-        >
-          <span className="inline-block">Guías</span>
-        </NavLink>
-      </div>
-    )}
+    <AnimatePresence>
+      {menuVisible && (
+        <div className="fixed left-0 right-0 md:hidden z-40" style={{ top: '64px' }}>
+          <motion.div
+            key="mobile-menu"
+            initial={{ y: -200 }}
+            animate={{ y: 0 }}
+            exit={{ y: -200 }}
+            transition={{ type: 'spring', stiffness: 350, damping: 30 }}
+            className="bg-white shadow-lg flex flex-col items-center py-4 gap-1 overflow-hidden"
+          >
+          {[
+            { to: '/', label: 'Inicio', end: true },
+            { to: '/retos', label: 'Retos' },
+            { to: '/proteina', label: 'Proteína' },
+            { to: '/guias', label: 'Guías' }
+          ].map((item, idx, arr) => (
+            <div key={item.to} className="w-full flex justify-center">
+              <NavLink
+                to={item.to}
+                end={item.end}
+                className={({ isActive }) =>
+                  'text-lg font-medium ' +
+                  (isActive ? 'border-b-2 border-pink-600 text-pink-600' : 'text-gray-700') +
+                  (idx !== arr.length - 1 ? ' mb-3' : '')
+                }
+                onClick={closeMenu}
+              >
+                <motion.span
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 40 }}
+                  transition={{ delay: idx * 0.2, duration: 0.7, type: 'spring' }}
+                  className="inline-block"
+                >
+                  {item.label}
+                </motion.span>
+              </NavLink>
+            </div>
+          ))}
+          </motion.div>
+        </div>
+      )}
+    </AnimatePresence>
   </>
 );
 
