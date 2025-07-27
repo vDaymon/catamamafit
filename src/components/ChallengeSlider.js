@@ -1,7 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import ChallengeCard from './ChallengeCard';
 import { defaultChallenges } from '../mock/challenges';
+function slugify(text) {
+  return text
+    .toString()
+    .normalize('NFD').replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)+/g, '');
+}
 
 const sliderVariants = {
   initial: { opacity: 0, x: 100 },
@@ -33,16 +42,22 @@ const ChallengeSlider = () => {
         >
           <span className="text-2xl">&#8592;</span>
         </button>
-        <motion.div
-          key={challenges[index].title}
-          variants={sliderVariants}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          className="w-full"
+        <Link
+          to={`/retos/${slugify(challenges[index].title || 'reto')}`}
+          className="block w-full"
+          style={{ zIndex: 1 }}
         >
-          <ChallengeCard challenge={challenges[index]} />
-        </motion.div>
+          <motion.div
+            key={challenges[index].title}
+            variants={sliderVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="w-full"
+          >
+            <ChallengeCard challenge={challenges[index]} />
+          </motion.div>
+        </Link>
         <button
           onClick={next}
           className="absolute right-0 top-1/2 -translate-y-1/2 bg-pink-100 hover:bg-pink-200 text-pink-600 rounded-full p-2 shadow transition z-10"
