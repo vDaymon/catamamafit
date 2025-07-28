@@ -1,6 +1,6 @@
 export const heroImages = [
   {
-    url: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80",
+    url: "https://i.imgur.com/RR0gUKD.jpeg",
     alt: "Mujer haciendo ejercicio al aire libre"
   },
   {

@@ -2,6 +2,7 @@ import React from 'react';
 import HomeHero from './HomeHero';
 import HomeTextImage from './HomeTextImage';
 import HomeBar from './HomeBar';
+import HomeBar2 from './HomeBar2';
 import HomeTextImageLeft from './HomeTextImageLeft';
 import HomeFeatures from './HomeFeatures';
 import Testimonials from './Testimonials';
@@ -16,7 +17,7 @@ const HomePage = () => (
     <HomeTextImage />
     <HomeBar />
     <HomeTextImageLeft />
-    <HomeBar />
+    <HomeBar2 />
     <HomeFeatures features={featuresData} />
     <ChallengeSlider />
     <FullImageSection />

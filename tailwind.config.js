@@ -7,9 +7,10 @@
           extend: {
             colors: {
               primary: {
-                light: '#fc9fff',
+                light: '#db779d',
                 DEFAULT: '#ff81e3',
-                dark: '#ff62b4',
+                dark: '#c84678',
+
               },
               accent: {
                 purple: '#bf9cfc',

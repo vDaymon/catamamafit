@@ -17,7 +17,7 @@ const fadeIn = {
 };
 
 const heroButtons = [
-  { label: 'Únete al reto de 21 días', link: '#' },
+  { label: 'Quiero unirme ahora', link: '#' },
   { label: 'Ver comunidad', link: '#' },
   { label: 'Descubre tu plan', link: '#' },
 ];
@@ -93,7 +93,7 @@ const HomeHero = ({ title = 'Bienvenida a CatamamaFit', subtitle = 'Tu viaje hac
             <motion.a
               key={current}
               href={heroButtons[current]?.link || '#'}
-              className="mb-10 px-10 py-5 bg-white text-pink-600 text-2xl font-bold rounded-full shadow-2xl hover:bg-pink-50 hover:shadow-pink-300/40 transition-all duration-300 drop-shadow-xl"
+              className="mb-10 px-10 py-4 bg-primary-dark text-white text-2xl font-bold  shadow-2xl hover:bg-primary-light hover:shadow-pink-300/40 transition-all duration-300 drop-shadow-xl"
               style={{ boxShadow: '0 8px 32px 0 rgba(255, 0, 128, 0.15), 0 2px 8px 0 rgba(0,0,0,0.10)' }}
               variants={fadeIn}
               initial="hidden"
