@@ -19,8 +19,8 @@ const fadeIn2 = {
 };
 
 const Photosection = ({
-  image1 = "https://i.imgur.com/9XMuIti.png",
   image2 = "https://i.imgur.com/HcKtUa0.png",
+  image1 = "https://i.imgur.com/9XMuIti.png",
   title = "",
   text = "Descubre cómo nuestros programas y comunidad pueden ayudarte a lograr tus objetivos de bienestar físico y mental. Únete a miles de mujeres que ya están cambiando su vida.",
 
