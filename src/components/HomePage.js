@@ -14,10 +14,10 @@ import { featuresData } from '../mock/features';
 const HomePage = () => (
   <>
     <HomeHero />
-    <HomeTextImage />
     <HomeBar />
+    <HomeTextImage />
     <HomeTextImageLeft />
-    <HomeBar2 />
+    <HomeBar2/>
     <HomeFeatures features={featuresData} />
     <ChallengeSlider />
     <FullImageSection />

@@ -32,13 +32,13 @@ const HomeTextImage = ({
           <p className="text-lg text-gray-700 mb-6">{text}</p>
           <a
             href={ctaLink}
-            className="inline-block px-8 py-3 bg-pink-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-pink-700 transition-all duration-300"
+            className="inline-block px-8 py-3 bg-pink-600 text-white text-lg font-semibold  shadow-lg hover:bg-pink-700 transition-all duration-300"
           >
             {cta}
           </a>
         </motion.div>
         <motion.div
-          className="w-full md:w-1/2 order-1 md:order-2 h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl mb-8 md:mb-0"
+          className="w-full md:w-1/2 order-1 md:order-2 h-64 md:h-96  overflow-hidden shadow-xl mb-8 md:mb-0"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}

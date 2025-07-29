@@ -43,7 +43,7 @@ const HomeHero = ({ title = 'Bienvenida a CatamamaFit', subtitle = 'Tu viaje hac
     intervalRef.current = setInterval(() => {
       setDirection(1);
       setCurrent((prev) => (prev + 1) % numImages);
-    }, 4000);
+    }, 10000);
     return () => clearInterval(intervalRef.current);
   }, [numImages]);
 
