@@ -29,9 +29,9 @@ const fadeIn = {
 
 const ProteinaPage = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center py-20 px-4">
+    <section className="min-h-screen bg-gradient-to-br   flex items-center justify-center py-20 px-4">
       <motion.div
-        className="bg-white rounded-3xl shadow-2xl max-w-4xl w-full flex flex-col md:flex-row overflow-hidden"
+        className="bg-white  shadow-2xl max-w-4xl w-full flex flex-col md:flex-row overflow-hidden"
         initial="hidden"
         animate="visible"
         variants={fadeIn}
@@ -45,7 +45,7 @@ const ProteinaPage = () => {
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-full object-cover md:rounded-l-3xl md:rounded-tr-none rounded-t-3xl md:rounded-tl-3xl md:shadow-xl"
+            className="w-full h-full object-cover md:shadow-xl"
             style={{ minHeight: '100%', minWidth: '100%' }}
           />
         </motion.div>
@@ -82,7 +82,7 @@ const ProteinaPage = () => {
             <span className="text-gray-500 line-through text-lg">$699</span>
           </motion.div>
           <motion.button
-            className="px-8 py-4 bg-pink-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-pink-700 transition-all duration-300 mt-2"
+            className="px-8 py-4 bg-pink-600 text-white text-lg font-semibold  shadow-lg hover:bg-pink-700 transition-all duration-300 mt-2"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             variants={fadeIn}

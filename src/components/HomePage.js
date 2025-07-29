@@ -10,6 +10,8 @@ import FullImageSection from './FullImageSection';
 import ChallengeSlider from './ChallengeSlider';
 import HomeBar3 from './HomeBar3';
 import FullImageSection2 from './FullImageSection2';
+import Photosection from './Photosection';
+import Photosection2 from './Photosection2';
 
 import { featuresData } from '../mock/features';
 
@@ -19,7 +21,8 @@ const HomePage = () => (
     <HomeBar />
     <HomeTextImage />
     <HomeBar3 />
-    <FullImageSection2 />
+    <Photosection2 />
+    <Photosection />
     <HomeTextImageLeft />
     <HomeBar2/>
     <HomeFeatures features={featuresData} />

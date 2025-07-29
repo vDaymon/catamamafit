@@ -18,7 +18,7 @@ const HomeTextImage = ({
 }) => {
   return (
     <section className="py-16 ">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-start gap-10 md:gap-16">
         <motion.div
           className="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left"
           initial="hidden"
@@ -27,8 +27,8 @@ const HomeTextImage = ({
           variants={fadeIn}
           custom={2}
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-pink-700 mb-4 leading-tight">{title}</h2>
-       <p className="text-sm text-gray-700 mb-6 whitespace-pre-line">
+          
+       <p className="text-lg text-gray-700  whitespace-pre-line">
   ¿Te sientes <span className="font-bold">inflamada</span>, con <span className="font-bold">baja</span> energía, <span className="font-bold">llena de antojos</span> y <span className="font-bold">desconectada</span> de ti misma?{"\n\n"}
 
   Yo también pasé por ahí.{"\n\n"}
@@ -41,7 +41,7 @@ const HomeTextImage = ({
   Solo necesita el ambiente correcto para volver a <span className="font-bold">activarse</span>.
 </p>
 
-<p className="text-sm text-gray-700 mb-6 whitespace-pre-line">
+<p className="text-lg text-gray-700 mb-6 whitespace-pre-line">
   <span className="font-bold">LEVEL UP</span> es un reto de 21 días de transformación física, emocional y hormonal para mujeres mayores de 35 años.{"\n\n"}
 
   Es una guía paso a paso donde aprenderás a activar tu metabolismo, regular tus hormonas y transformar tu cuerpo <span className="font-bold">sin dietas extremas ni entrenamientos eternos</span>.{"\n\n"}
@@ -52,14 +52,20 @@ const HomeTextImage = ({
           
         </motion.div>
         <motion.div
-          className="w-full md:w-1/2 order-1 md:order-2 h-96 md:h-full  overflow-hidden shadow-xl mb-8 md:mb-0"
+          className="w-full md:w-1/2 order-1 md:order-2 h-full  overflow-hidden shadow-xl mb-8 md:mb-0 self-stretch "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeIn}
           custom={1}
         >
-          <img src={image} alt={title} className="w-full h-full object-cover" />
+          <div className="w-full h-full flex">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
+      </div>
         </motion.div>
       </div>
     </section>

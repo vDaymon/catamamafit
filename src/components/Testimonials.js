@@ -87,7 +87,7 @@ const Testimonials = () => {
                   style={{ width: '100%' }}
                 >
                   {slides[current].map((t) => (
-                  <div key={t.id} className="bg-white rounded-xl shadow-md p-6 flex-1 max-w-xs text-center mx-auto flex flex-col justify-between h-full">
+                  <div key={t.id} className="bg-white  shadow-xl p-6 flex-1 max-w-xs text-center mx-auto flex flex-col justify-between h-full">
                     <StarRating rate={t.rate} />
                     <div className="flex-1 mb-4 overflow-y-auto max-h-32 md:max-h-40">
                       <p className="text-gray-700 italic">"{t.description}"</p>

@@ -24,7 +24,7 @@ const ChallengeCard = ({ challenge = {}, index = 0 }) => {
   return (
     <motion.div
       ref={ref}
-      className="flex flex-col md:flex-row w-full max-w-xl md:h-48 bg-white rounded-xl shadow-2xl overflow-hidden cursor-pointer"
+      className="flex flex-col md:flex-row w-full max-w-xl md:h-48 bg-white  shadow-2xl overflow-hidden cursor-pointer"
       variants={fadeIn}
       initial="hidden"
       animate={controls}
