@@ -19,8 +19,8 @@ const fadeIn2 = {
 };
 
 const Photosection = ({
-  image1 = "https://i.imgur.com/HcKtUa0.png",
-  image2 = "https://i.imgur.com/9XMuIti.png",
+  image1 = "https://i.imgur.com/9XMuIti.png",
+  image2 = "https://i.imgur.com/HcKtUa0.png",
   title = "",
   text = "Descubre cómo nuestros programas y comunidad pueden ayudarte a lograr tus objetivos de bienestar físico y mental. Únete a miles de mujeres que ya están cambiando su vida.",
 
@@ -32,7 +32,7 @@ const Photosection = ({
     
     {/* Imagen 1 */}
     <motion.div
-      className="w-full md:w-1/2 h-full overflow-hidden  self-stretch px-4"
+      className="w-full md:w-1/2 h-full overflow-hidden  self-stretch "
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
@@ -50,7 +50,7 @@ const Photosection = ({
 
     {/* Imagen 2 */}
     <motion.div
-      className="w-full md:w-1/2 h-full overflow-hidden  self-stretch "
+      className="w-full md:w-1/2 h-full overflow-hidden  self-stretch px-4"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
