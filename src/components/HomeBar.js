@@ -4,7 +4,7 @@ import React from "react";
 const HomeBar = ({
   text = "NO ESTAS ESTANCADA, SOLO NECESITAS EL IMPULSO CORRECTO"
 }) => (
-  <div className="px-10">
+  <div className="px-10 py-10">
     <section className="w-full bg-primary-dark py-8 ">
       <div className="container  px-4">
         <p className="text-center text-white text-xl md:text-2xl font-bold tracking-wide">

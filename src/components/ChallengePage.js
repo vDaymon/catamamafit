@@ -14,7 +14,7 @@ function slugify(text) {
 
 const ChallengePage = () => {
   return (
-    <section className="py-20 bg-pink-50 min-h-screen">
+    <section className="py-20 min-h-screen">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
           Nuestros Retos

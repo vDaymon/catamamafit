@@ -11,14 +11,13 @@ const fadeIn = {
 };
 
 const HomeTextImage = ({
-  image = "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
-  title = "Transforma tu vida con CatamamaFit",
+  image = "https://i.imgur.com/KqNL6Gl.jpeg",
+  title = "",
   text = "Descubre cómo nuestros programas y comunidad pueden ayudarte a lograr tus objetivos de bienestar físico y mental. Únete a miles de mujeres que ya están cambiando su vida.",
-  cta = "Conoce más",
-  ctaLink = "/retos"
+
 }) => {
   return (
-    <section className="py-16 bg-pink-50">
+    <section className="py-16 ">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10 md:gap-16">
         <motion.div
           className="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left"
@@ -29,16 +28,31 @@ const HomeTextImage = ({
           custom={2}
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-pink-700 mb-4 leading-tight">{title}</h2>
-          <p className="text-lg text-gray-700 mb-6">{text}</p>
-          <a
-            href={ctaLink}
-            className="inline-block px-8 py-3 bg-pink-600 text-white text-lg font-semibold  shadow-lg hover:bg-pink-700 transition-all duration-300"
-          >
-            {cta}
-          </a>
+       <p className="text-sm text-gray-700 mb-6 whitespace-pre-line">
+  ¿Te sientes <span className="font-bold">inflamada</span>, con <span className="font-bold">baja</span> energía, <span className="font-bold">llena de antojos</span> y <span className="font-bold">desconectada</span> de ti misma?{"\n\n"}
+
+  Yo también pasé por ahí.{"\n\n"}
+
+  Por eso cree <span className="font-bold">LEVEL UP</span>, para ayudarte a recuperar tu bienestar.{"\n\n"}
+
+  Después de los 35, muchas mujeres sienten que su cuerpo <span className="font-bold">ya no responde igual</span>… y la causa suele ser un desbalance hormonal.{"\n\n"}
+
+  <span className="font-bold">La buena noticia</span> es que tu cuerpo no está roto.{"\n"}
+  Solo necesita el ambiente correcto para volver a <span className="font-bold">activarse</span>.
+</p>
+
+<p className="text-sm text-gray-700 mb-6 whitespace-pre-line">
+  <span className="font-bold">LEVEL UP</span> es un reto de 21 días de transformación física, emocional y hormonal para mujeres mayores de 35 años.{"\n\n"}
+
+  Es una guía paso a paso donde aprenderás a activar tu metabolismo, regular tus hormonas y transformar tu cuerpo <span className="font-bold">sin dietas extremas ni entrenamientos eternos</span>.{"\n\n"}
+
+  Con acompañamiento diario, alimentación específica, rutinas de entrenamiento de 30 minutos, miniretos, motivación, y el crecimiento personal y espiritual como base… vivirás un <span className="font-bold">cambio real desde adentro hacia afuera</span>.
+</p>
+
+          
         </motion.div>
         <motion.div
-          className="w-full md:w-1/2 order-1 md:order-2 h-64 md:h-96  overflow-hidden shadow-xl mb-8 md:mb-0"
+          className="w-full md:w-1/2 order-1 md:order-2 h-96 md:h-full  overflow-hidden shadow-xl mb-8 md:mb-0"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}

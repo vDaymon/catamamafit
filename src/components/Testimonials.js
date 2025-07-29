@@ -66,7 +66,7 @@ const Testimonials = () => {
   }, [slides.length]);
 
   return (
-    <section className="py-12 bg-purple-50">
+    <section className="py-12 ">
       <h2 className="text-3xl font-bold text-center text-pink-600 mb-8">Testimonios</h2>
       <div className="max-w-3xl mx-auto flex flex-col items-center">
         <div className="relative w-full flex justify-center items-center">
