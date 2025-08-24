@@ -21,14 +21,13 @@ const HomePage = () => (
     <HomeBar />
     <HomeTextImage />
     <HomeBar3 />
+    <Testimonials />
     <Photosection2 />
     <Photosection />
-    <HomeTextImageLeft />
     <HomeBar2/>
     <HomeFeatures features={featuresData} />
     <ChallengeSlider />
-    <FullImageSection />
-    <Testimonials />
+    
   </>
 );
 

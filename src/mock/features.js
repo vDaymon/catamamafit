@@ -4,7 +4,7 @@ export const featuresData = [
     icon: 'heart',
     title: 'Bienestar Integral',
     description: 'Programas diseñados para nutrir tu cuerpo y mente, logrando un equilibrio perfecto.',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80' // Cambia por la ruta real de tu imagen
+    image: 'https://i.imgur.com/ayZyAHL.jpeg' // Cambia por la ruta real de tu imagen
   },
   {
     icon: 'star',
@@ -16,6 +16,6 @@ export const featuresData = [
     icon: 'check',
     title: 'Comunidad de Apoyo',
     description: 'Únete a una red de mujeres que te motivarán y acompañarán en cada paso de tu transformación.',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80' // Cambia por la ruta real de tu imagen
+    image: 'https://i.imgur.com/z2wAy82.jpeg' // Cambia por la ruta real de tu imagen
   },
 ];

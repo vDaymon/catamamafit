@@ -27,7 +27,7 @@ const HomeFeatures = ({ features = [] }) => {
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              className="bg-pink-50 p-8 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="bg-white p-8  shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
               variants={fadeIn}
               initial="hidden"
               whileInView="visible"
@@ -39,7 +39,7 @@ const HomeFeatures = ({ features = [] }) => {
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    className="w-1/2 h-40 md:h-48 object-cover rounded-xl mx-auto"
+                    className="w-1/2 h-40 md:h-48 object-cover mx-auto"
                     style={{ minWidth: '160px', maxWidth: '100%' }}
                   />
                 )}

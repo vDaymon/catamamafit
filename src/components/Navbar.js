@@ -8,7 +8,7 @@ const Navbar = ({ mobileMenuOpen, menuVisible, menuAnim, openMenu, closeMenu }) 
     <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm shadow-sm py-4">
       <nav className="container mx-auto flex justify-between items-center px-4 relative overflow-visible">
         <NavLink to="/" className="text-2xl font-bold text-pink-600 hover:text-primary-dark transition-colors transform duration-200 hover:scale-125">
-          CatamamaFit
+          <img src="https://i.imgur.com/qkW2Zsr.png" alt="CatamamaFit" className="h-12" />
         </NavLink>
         {/* Desktop nav */}
         <div className="space-x-6 items-center hidden md:flex">

@@ -85,7 +85,9 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="font-sans antialiased text-gray-800 overflow-x-hidden">
+       {/* Fondo fijo en el lado izquierdo */}
+
+      <div className="relative z-10 font-sans antialiased text-gray-800 overflow-x-hidden">
         
 
 
