@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { otrosProductos } from "../mock/otros";
+import useBackgroundImage from "../hooks/useBackgroundImage";
 
 
 // Slugify helper igual que en App.js
@@ -24,16 +25,31 @@ const fadeIn = {
 };
 
 const OtrosPage = () => {
+  const { imageLoaded, imageError } = useBackgroundImage('./imgs/fondoguias.png');
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    if (imageLoaded) {
+      setShowContent(true);
+    }
+  }, [imageLoaded]);
+
   return (
     <section className="py-20 bg-white min-h-screen relative" style={{
-      backgroundImage: 'url(./imgs/fondoguias.png)',
+      backgroundImage: imageLoaded ? 'url(./imgs/fondoguias.png)' : 'none',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
+      backgroundRepeat: 'no-repeat',
+      backgroundColor: imageError ? '#f3f4f6' : 'white'
     }}>
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-12">Guías de Alimentación</h2>
-        <div className="flex flex-col items-center gap-12">
+        {!imageLoaded && !imageError && (
+          <div className="flex justify-center items-center py-20">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-600"></div>
+          </div>
+        )}
+        <div className={`flex flex-col items-center gap-12 transition-opacity duration-500 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
           {otrosProductos.map((prod, i) => (
             <motion.div
               key={prod.id}
