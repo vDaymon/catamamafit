@@ -21,6 +21,7 @@ import { motion } from 'framer-motion';
 import { BrowserRouter as Router, Routes, Route, NavLink, useNavigate, useParams, useLocation } from 'react-router-dom';
 import WhatsappButton from './components/WhatsappButton';
 import Navbar from './components/Navbar';
+import PromoBanner from './components/PromoBanner';
 import Footer from './components/Footer';
 import ProteinaPage from './components/ProteinaPage';
 import GuiasPage from './components/OtrosPage';
@@ -88,8 +89,7 @@ function App() {
        {/* Fondo fijo en el lado izquierdo */}
 
       <div className="relative z-10 font-sans antialiased text-gray-800 overflow-x-hidden">
-        
-
+        <PromoBanner />
 
         <Navbar
           mobileMenuOpen={mobileMenuOpen}
@@ -100,7 +100,7 @@ function App() {
         />
 
 
-        <main className="pt-16">
+        <main className="pt-24">
           <Routes>
             <Route path="/" element={
               <HomePage />

@@ -29,7 +29,12 @@ const fadeIn = {
 
 const ProteinaPage = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br   flex items-center justify-center py-20 px-4">
+    <section className="min-h-screen flex items-center justify-center py-20 px-4 relative" style={{
+      backgroundImage: 'url(/imgs/fondoproteina2.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
       <motion.div
         className="bg-white  shadow-2xl max-w-4xl w-full flex flex-col md:flex-row overflow-hidden"
         initial="hidden"

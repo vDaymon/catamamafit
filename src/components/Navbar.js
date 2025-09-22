@@ -5,7 +5,7 @@ import { FaInstagram, FaTiktok } from 'react-icons/fa';
 
 const Navbar = ({ mobileMenuOpen, menuVisible, menuAnim, openMenu, closeMenu }) => (
   <>
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm shadow-sm py-4">
+    <header className="fixed top-10 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm shadow-sm py-4">
       <nav className="container mx-auto flex justify-between items-center px-4 relative overflow-visible">
         <NavLink to="/" className="text-2xl font-bold text-pink-600 hover:text-primary-dark transition-colors transform duration-200 hover:scale-125">
           <img src="https://i.imgur.com/qkW2Zsr.png" alt="CatamamaFit" className="h-12" />
@@ -19,15 +19,7 @@ const Navbar = ({ mobileMenuOpen, menuVisible, menuAnim, openMenu, closeMenu }) 
               `text-lg font-medium transition-colors px-2 pb-1 transform duration-200 hover:scale-125 ${isActive ? 'text-pink-600 border-b-2 border-pink-600' : 'text-gray-700 hover:text-pink-600'}`
             }
           >
-            Inicio
-          </NavLink>
-          <NavLink
-            to="/retos"
-            className={({ isActive }) =>
-              `text-lg font-medium transition-colors px-2 pb-1 transform duration-200 hover:scale-110 ${isActive ? 'text-pink-600 border-b-2 border-pink-600' : 'text-gray-700 hover:text-pink-600'}`
-            }
-          >
-            Retos
+            Reto 21 Días
           </NavLink>
           <NavLink
             to="/proteina"
@@ -43,7 +35,15 @@ const Navbar = ({ mobileMenuOpen, menuVisible, menuAnim, openMenu, closeMenu }) 
               `text-lg font-medium transition-colors px-2 pb-1 transform duration-200 hover:scale-110 ${isActive ? 'text-pink-600 border-b-2 border-pink-600' : 'text-gray-700 hover:text-pink-600'}`
             }
           >
-            Guías
+            Guías de Alimentación
+          </NavLink>
+          <NavLink
+            to="/retos"
+            className={({ isActive }) =>
+              `text-lg font-medium transition-colors px-2 pb-1 transform duration-200 hover:scale-110 ${isActive ? 'text-pink-600 border-b-2 border-pink-600' : 'text-gray-700 hover:text-pink-600'}`
+            }
+          >
+            Entrenamientos
           </NavLink>
           {/* Iconos redes desktop */}
           <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="ml-4 text-pink-500 hover:text-pink-700 transition-transform duration-200 transform hover:scale-125">
@@ -86,7 +86,7 @@ const Navbar = ({ mobileMenuOpen, menuVisible, menuAnim, openMenu, closeMenu }) 
     {/* Mobile dropdown menu below navbar */}
     <AnimatePresence>
       {menuVisible && (
-        <div className="fixed left-0 right-0 md:hidden z-40" style={{ top: '64px' }}>
+        <div className="fixed left-0 right-0 md:hidden z-40" style={{ top: '104px' }}>
           <motion.div
             key="mobile-menu"
             initial={{ y: -200 }}
@@ -96,10 +96,10 @@ const Navbar = ({ mobileMenuOpen, menuVisible, menuAnim, openMenu, closeMenu }) 
             className="bg-white shadow-lg flex flex-col items-center py-4 gap-1 overflow-hidden"
           >
           {[
-            { to: '/', label: 'Inicio', end: true },
-            { to: '/retos', label: 'Retos' },
+            { to: '/', label: 'Reto 21 Días', end: true },
             { to: '/proteina', label: 'Proteína' },
-            { to: '/guias', label: 'Guías' }
+            { to: '/guias', label: 'Guías de Alimentación' },
+            { to: '/retos', label: 'Entrenamientos' }
           ].map((item, idx, arr) => (
             <div key={item.to} className="w-full flex justify-center">
               <NavLink

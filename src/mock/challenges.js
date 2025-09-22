@@ -2,7 +2,7 @@ const defaultImage = 'https://upload.wikimedia.org/wikipedia/commons/6/65/Fitnes
 export const defaultChallenges = [
   {
     id: '1',
-    title: 'Reto 21 Días Fit',
+    title: 'abdomen plano express',
     image: 'https://plus.unsplash.com/premium_photo-1674059549221-e2943b475f62?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' || defaultImage,
     description: 'Transforma tu cuerpo y mente en solo 21 días con rutinas intensas y plan de alimentación. Incluye acceso a grupo de apoyo y seguimiento personalizado.',
     price: 49.99,

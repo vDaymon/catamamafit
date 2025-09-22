@@ -20,7 +20,7 @@ const HomeTextImage = ({
     <section className="pt-16 ">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-start gap-10 md:gap-16">
         <motion.div
-          className="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left shadow-xl p-5"
+          className="w-full md:w-1/2 order-1 md:order-1 text-center md:text-left shadow-xl p-5"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
@@ -58,7 +58,7 @@ const HomeTextImage = ({
           
         </motion.div>
         <motion.div
-          className="w-full md:w-1/2 order-1 md:order-2 h-full  overflow-hidden  mb-8 md:mb-0 self-stretch "
+          className="w-full md:w-1/2 order-2 md:order-2 h-full  overflow-hidden  self-stretch "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}

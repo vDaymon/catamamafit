@@ -33,7 +33,15 @@ const ChallengeSlider = () => {
 
   return (
     <section className="w-full flex flex-col items-center py-16 bg-white">
-      <h2 className="text-3xl md:text-4xl font-bold text-pink-700 mb-8 text-center">Descubre nuestros Retos</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-pink-700 mb-8 text-center">Únete al reto ahora</h2>
+      <a 
+        href="https://wa.me/573001234567?text=Hola!%20Me%20interesa%20unirme%20al%20reto%20de%20CatamamaFit" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-6 px-12 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg mb-8 text-xl"
+      >
+        💬 ¡Escríbenos por WhatsApp!
+      </a>
       <div className="relative w-full max-w-xl mx-auto flex items-center justify-center">
         <button
           onClick={prev}

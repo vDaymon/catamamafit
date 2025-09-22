@@ -25,14 +25,19 @@ const fadeIn = {
 
 const OtrosPage = () => {
   return (
-    <section className="py-20 bg-pink-50 min-h-screen">
+    <section className="py-20 bg-white min-h-screen relative" style={{
+      backgroundImage: 'url(/imgs/fondoguias.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Guías</h2>
+        <h2 className="text-4xl font-bold text-center text-white mb-12">Guías de Alimentación</h2>
         <div className="flex flex-col items-center gap-12">
           {otrosProductos.map((prod, i) => (
             <motion.div
               key={prod.id}
-              className="w-full max-w-xl bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row"
+              className="w-full max-w-xl bg-white shadow-2xl overflow-hidden flex flex-col md:flex-row"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
@@ -49,7 +54,7 @@ const OtrosPage = () => {
                   <span className="text-xl font-bold text-pink-700">{prod.price}</span>
                   <Link
                     to={`/guias/${slugify(prod.title)}`}
-                    className="px-6 py-2 bg-pink-600 text-white rounded-full font-semibold shadow hover:bg-pink-700 transition-all duration-300"
+                    className="px-6 py-2 bg-pink-600 text-white font-semibold shadow hover:bg-pink-700 transition-all duration-300"
                   >
                     Ver detalles
                   </Link>
