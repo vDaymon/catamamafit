@@ -15,7 +15,7 @@ function slugify(text) {
 const ChallengePage = () => {
   return (
     <section className="py-20 min-h-screen relative" style={{
-      backgroundImage: 'url(/imgs/fondoentrenamientos.png)',
+      backgroundImage: 'url(./imgs/fondoentrenamientos.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'

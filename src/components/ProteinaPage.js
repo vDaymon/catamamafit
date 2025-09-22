@@ -30,7 +30,7 @@ const fadeIn = {
 const ProteinaPage = () => {
   return (
     <section className="min-h-screen flex items-center justify-center py-20 px-4 relative" style={{
-      backgroundImage: 'url(/imgs/fondoproteina2.png)',
+      backgroundImage: 'url(./imgs/fondoproteina2.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'

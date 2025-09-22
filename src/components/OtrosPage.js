@@ -26,7 +26,7 @@ const fadeIn = {
 const OtrosPage = () => {
   return (
     <section className="py-20 bg-white min-h-screen relative" style={{
-      backgroundImage: 'url(/imgs/fondoguias.png)',
+      backgroundImage: 'url(./imgs/fondoguias.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
