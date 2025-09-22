@@ -46,19 +46,19 @@ const Navbar = ({ mobileMenuOpen, menuVisible, menuAnim, openMenu, closeMenu }) 
             Entrenamientos
           </NavLink>
           {/* Iconos redes desktop */}
-          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="ml-4 text-pink-500 hover:text-pink-700 transition-transform duration-200 transform hover:scale-125">
+          <a href="https://www.instagram.com/catamamafit/" target="_blank" rel="noopener noreferrer" className="ml-4 text-pink-500 hover:text-pink-700 transition-transform duration-200 transform hover:scale-125">
             <FaInstagram className="w-6 h-6" />
           </a>
-          <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-700 transition-transform duration-200 transform hover:scale-125">
+          <a href="https://www.tiktok.com/@catamamafit?lang=es" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-700 transition-transform duration-200 transform hover:scale-125">
             <FaTiktok className="w-6 h-6" />
           </a>
         </div>
         {/* Iconos redes mobile */}
         <div className="flex md:hidden items-center gap-5 mr-2">
-          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-700 transition-transform duration-200 transform hover:scale-125">
+          <a href="https://www.instagram.com/catamamafit/" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-700 transition-transform duration-200 transform hover:scale-125">
             <FaInstagram className="w-6 h-6" />
           </a>
-          <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-700 transition-transform duration-200 transform hover:scale-125">
+          <a href="https://www.tiktok.com/@catamamafit?lang=es" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-700 transition-transform duration-200 transform hover:scale-125">
             <FaTiktok className="w-6 h-6" />
           </a>
         </div>

@@ -9,10 +9,11 @@ const OtrosDetail = ({ producto = {} }) => {
 
   return (
     <div className="min-h-screen py-16 px-4 relative" style={{
-      backgroundImage: 'url(./imgs/fondoguias.png)',
+      backgroundImage: 'url(/imgs/fondoguias.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
+      backgroundRepeat: 'no-repeat',
+      backgroundColor: '#f0f0f0'
     }}>
       <motion.div
         ref={ref}

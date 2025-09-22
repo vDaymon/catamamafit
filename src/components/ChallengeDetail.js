@@ -7,7 +7,7 @@ const ChallengeDetail = ({ challenge = {} }) => {
 
   return (
     <div className="min-h-screen py-16 px-4 relative" style={{
-      backgroundImage: 'url(./imgs/fondoentrenamientos.png)',
+      backgroundImage: 'url(/imgs/fondoentrenamientos.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
