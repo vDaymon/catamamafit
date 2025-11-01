@@ -21,7 +21,7 @@ const Navbar = ({ mobileMenuOpen, menuVisible, menuAnim, openMenu, closeMenu }) 
           >
             Reto 21 Días
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/proteina"
             className={({ isActive }) =>
               `text-lg font-medium transition-colors px-2 pb-1 transform duration-200 hover:scale-110 ${isActive ? 'text-pink-600 border-b-2 border-pink-600' : 'text-gray-700 hover:text-pink-600'}`
@@ -44,7 +44,7 @@ const Navbar = ({ mobileMenuOpen, menuVisible, menuAnim, openMenu, closeMenu }) 
             }
           >
             Entrenamientos
-          </NavLink>
+          </NavLink> */}
           {/* Iconos redes desktop */}
           <a href="https://www.instagram.com/catamamafit/" target="_blank" rel="noopener noreferrer" className="ml-4 text-pink-500 hover:text-pink-700 transition-transform duration-200 transform hover:scale-125">
             <FaInstagram className="w-6 h-6" />

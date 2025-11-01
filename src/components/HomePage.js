@@ -26,7 +26,7 @@ const HomePage = () => (
     <Photosection />
     <HomeBar2/>
     <HomeFeatures features={featuresData} />
-    <ChallengeSlider />
+    {/* <ChallengeSlider /> */}
     
   </>
 );
